@@ -1,0 +1,53 @@
+
+language : en 
+ss_fea : The Best Music Player
+ss1 : Great Music 
+ss2 : Best Player
+ss3 : Colorful Screen 
+ss4 : Free Radio
+ss5 : Easy Favs
+ss6 : Offline Music
+ss7 : All in One
+ss8 : User Friendly
+
+------------------------------------------
+
+language : de
+ss_fea : Der beste Musikplayer
+ss1 : Großartige Musik
+ss2 : Bester Spieler
+ss3 : Bunter Bildschirm
+ss4 : Freies Radio
+ss5 : Einfache Favoriten
+ss6 : Offline-Musik
+ss7 : Alles in einem
+ss8 : Benutzerfreundlich
+
+------------------------------------------
+
+language : fr
+ss_fea : Le meilleur lecteur de musique
+ss1 : Grande Musique
+ss2 : Meilleur joueur
+ss3 : écran coloré
+ss4 : Radio gratuite
+ss5 : Favoris faciles
+ss6 : Musique hors ligne
+SS7 : Tout en Un
+ss8 : Convivial  
+
+------------------------------------------
+
+language : jpy
+ss_fea : 最高の音楽プレーヤー
+ss1 : 素晴らしい音楽
+ss2 : 最優秀選手
+ss3 : カラフルスクリーン
+ss4 : フリーラジオ
+ss5 : 簡単なお気に入り
+ss6 : オフライン音楽
+ss7 : オールインワン
+ss8 : ユーザーフレンドリー
+
+------------------------------------------
+
