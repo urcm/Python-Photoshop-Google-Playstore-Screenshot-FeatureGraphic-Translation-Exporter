@@ -1,6 +1,6 @@
 # Google Playstore Screenshot and Feature Graphic Translation Exporter
 
-With this script, you can automatically translate the texts of Screenshots and Feature Graphics you have created for Google Playstore into other world languages without opening .psd files with Adobe Photoshop.
+Translate the texts of Screenshots and Feature Graphics automatically that you have created for Google Playstore into other languages without opening .psd files with Photoshop.
 
 ## How to use it
 * Create a text file and paste the translated text into it. Exmp: translate.txt
