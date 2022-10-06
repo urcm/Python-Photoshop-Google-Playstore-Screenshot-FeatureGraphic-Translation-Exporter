@@ -1,0 +1,1 @@
+# Python-Photoshop-Google-Playstore-Screenshot-FeatureGraphic-Translation-Exporter
