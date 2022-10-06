@@ -15,3 +15,12 @@ import win32com.client
 # in pywin32 folder "Lib/site-packages/pywin32_system32",
 # which including 3 dll libs, copy them to the "/Lib/site-packages/win32" directory,
 # which including the win32apython pi.pyd or win32api.pyc.
+
+import sys
+import os
+import re
+
+
+
+if __name__ == "__main__":
+    main()
