@@ -27,3 +27,19 @@ Dieser Code hilft Ihnen, die Texte von Screenshots und Funktionsgrafiken, die Si
 * Erstellen Sie eine Textdatei und fügen Sie den übersetzten Text ein. Beispiel: translate.txt
 * Bearbeiten Sie die .psd wie im Beispiel. Tests und Hintergrund sollten nicht zusammengeführt werden. Zeichenfläche und Texte sollten wie in der Beispiel-.psd-Datei benannt werden.
 * Führen Sie schließlich das Skript aus. Übersetzte Exporte werden in dem Ordner erstellt, in dem sich .psd und .txt befinden.
+
+<HR>
+
+* Original Screens
+ ![Original](images/translate_en.jpg)
+ 
+ * Translated Screens
+![Original](images/translate_jpy.jpg)
+
+
+<HR>
+
+
+## License
+
+This library is licensed under the MIT License. 
