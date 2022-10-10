@@ -32,6 +32,21 @@ def main():
 
     print("\nPhotoshop File: '{}'\n".format(directory))
     print("\nTranslated Text File: '{}'\n".format(file_translation))
+    
+    # Definition for just escaping warning "local variable 'ps_app' might be referenced before assignment"
+    ps_app = None
+    # sys.exit()
+    try:
+        ps_app = win32com.client.Dispatch("Photoshop.Application")
+    except Exception as e:
+        print("\nDispatching Photoshop is not working...\n", repr(e))
+        print("\nDo you have installed Photoshop?\n")
+
+    # path = "D:\calismalar\lina\OK2\test\translate.txt"
+    path = sys.argv[2]
+    
+    
+    
 
 if __name__ == "__main__":
     main()
