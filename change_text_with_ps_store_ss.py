@@ -21,6 +21,17 @@ import os
 import re
 
 
+def main():
+    if len(sys.argv) < 3:
+        print("\nUsage error")
+        print("\nex. change_text_with_ps_store_ss.py test.psd translate.txt\n\n")
+        sys.exit()
+
+    directory = sys.argv[1]
+    file_translation = sys.argv[2]
+
+    print("\nPhotoshop File: '{}'\n".format(directory))
+    print("\nTranslated Text File: '{}'\n".format(file_translation))
 
 if __name__ == "__main__":
     main()
