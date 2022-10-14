@@ -46,6 +46,16 @@ def main():
     path = sys.argv[2]
     
     
+    # path = "C:\folder\translate.txt"
+    path = sys.argv[2]
+
+    s = "------------------------------------------"
+    # file_name = r"C:\folder\translate.psd"
+    ps_source = sys.argv[1]
+
+    file_location = os.path.dirname(ps_source)
+    ps_app.Open(ps_source)
+    doc = ps_app.Application.ActiveDocument
     
 
 if __name__ == "__main__":
