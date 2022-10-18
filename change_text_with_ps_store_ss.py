@@ -57,6 +57,9 @@ def main():
     ps_app.Open(ps_source)
     doc = ps_app.Application.ActiveDocument
     
+    translation_dict = {}
+    translation_arr, dic_counter = [], []
+    
 
 if __name__ == "__main__":
     main()
