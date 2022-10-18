@@ -60,6 +60,29 @@ def main():
     translation_dict = {}
     translation_arr, dic_counter = [], []
     
+    # Read text file for translated text
+    with open(path, 'r', encoding='utf-8') as fh:
+        for b, line in enumerate(fh):
+            if re.search(s, line):
+                # print(b, 1)
+                dic_counter.append(b)
+                # pass
+            else:
+                try:
+                    # print(b , "b")
+                    if (b - 1) in dic_counter:
+                        # print(b-1)
+                        translation_dict = translation_dict.copy()
+                    else:
+                        (key, val) = line.split(":")
+                        translation_dict[key.strip()] = val.strip()
+                        # print(key)
+                        if translation_dict not in translation_arr:
+                            translation_arr.append(translation_dict)
+                except Exception as e:
+                    print(repr(e), "Do nothing")
+                    pass
+    
 
 if __name__ == "__main__":
     main()
