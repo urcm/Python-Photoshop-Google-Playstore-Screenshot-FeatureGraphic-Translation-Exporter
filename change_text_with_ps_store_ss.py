@@ -82,6 +82,24 @@ def main():
                 except Exception as e:
                     print(repr(e), "Do nothing")
                     pass
+                
+    # Read translation dictionary
+    for c in translation_arr:
+        # print(c)
+        # Change the text content
+        print(c["language"], " language starts for layer to update...")
+        file_layer_container = 0
+        for i in doc.LayerSets:
+            for lyr in i.ArtLayers:
+                if lyr.Name == "text" + str(file_layer_container):
+                    lyr.TextItem.contents = c["ss" + str(file_layer_container)]
+                    # lyr.TextItem.contents = c["ss '{}'".format(str(file_layer_container))]
+                    print(lyr.Name, file_layer_container, "Text has updated.", lyr.TextItem.contents)
+                elif lyr.Name == 'ss_fea':
+                    lyr.TextItem.contents = c["ss_fea"]
+                    print(lyr.Name, file_layer_container, "Text has updated.", lyr.TextItem.contents)
+
+            file_layer_container += 1                
     
 
 if __name__ == "__main__":
