@@ -99,7 +99,18 @@ def main():
                     lyr.TextItem.contents = c["ss_fea"]
                     print(lyr.Name, file_layer_container, "Text has updated.", lyr.TextItem.contents)
 
-            file_layer_container += 1                
+            file_layer_container += 1       
+            
+
+        # Save for Web dispatch
+        options = win32com.client.Dispatch('Photoshop.ExportOptionsSaveForWeb')
+        # Define JPEG save options
+        options.Format = 6  # JPEG
+        options.Quality = 100  # Img Quality Val 0-100
+
+        # Define PNG save options
+        # options.Format = 13  # PNG
+        # options.PNG8 = False  # Get PNG-24 bit
     
 
 if __name__ == "__main__":
