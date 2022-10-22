@@ -101,6 +101,40 @@ def main():
 
             file_layer_container += 1       
             
+        """
+        for i in doc.LayerSets:    
+            for a in i.ArtLayers:
+                # print(a.Name)
+                # print(dict_texts["ss1"])
+
+                if a.name == 'text1':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss1"]
+                elif a.name == 'text2':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss2"]
+                elif a.name == 'text3':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss3"]
+                elif a.name == 'text4':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss4"]
+                elif a.name == 'text5':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss5"]
+                elif a.name == 'text6':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss6"]
+                elif a.name == 'text7':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss7"]
+                elif a.name == 'text8':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss8"]
+                elif a.name == 'ss_fea':
+                    print(a.TextItem.contents)
+                    a.TextItem.contents = c["ss_fea"] """ 
+            
 
         # Save for Web dispatch
         options = win32com.client.Dispatch('Photoshop.ExportOptionsSaveForWeb')
