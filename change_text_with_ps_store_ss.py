@@ -145,6 +145,16 @@ def main():
         # Define PNG save options
         # options.Format = 13  # PNG
         # options.PNG8 = False  # Get PNG-24 bit
+        
+        
+        export_location = os.path.join(file_location, c['language'])
+
+        # Check if there is a folder with language name, not create a folder
+        if not os.path.exists(export_location):
+            os.makedirs(export_location)
+
+        # Save history state to get initial file
+        saved_history_state = doc.activeHistoryState
     
 
 if __name__ == "__main__":
