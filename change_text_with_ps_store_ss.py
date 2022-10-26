@@ -155,6 +155,13 @@ def main():
 
         # Save history state to get initial file
         saved_history_state = doc.activeHistoryState
+        
+        file_del_counter = 0
+        for d, i in enumerate(doc.layers):
+            fname = os.path.join(export_location, i.name + ".jpg")
+            print('Exporting', fname)
+            # Tried to set layers invisible but it has not work for Save for Web
+            # so all artboards except saving artboard deleting...
     
 
 if __name__ == "__main__":
