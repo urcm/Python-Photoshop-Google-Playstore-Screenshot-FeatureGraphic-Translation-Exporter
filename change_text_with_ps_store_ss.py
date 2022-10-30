@@ -163,7 +163,8 @@ def main():
             # Tried to set layers invisible but it has not work for Save for Web
             # so all artboards except saving artboard deleting...
             for s in reversed(range(len(doc.layers))):            
-    
+                if s is file_del_counter:
+                    pass    
 
 if __name__ == "__main__":
     main()
