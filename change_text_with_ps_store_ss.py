@@ -165,6 +165,8 @@ def main():
             for s in reversed(range(len(doc.layers))):            
                 if s is file_del_counter:
                     pass    
+                else:
+                    print(s, "Deleting artboard Save for Web")
 
 if __name__ == "__main__":
     main()
