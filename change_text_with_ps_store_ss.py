@@ -167,6 +167,11 @@ def main():
                     pass    
                 else:
                     print(s, "Deleting artboard Save for Web")
+                    if doc.layers[s].Name == 'fea':
+                        doc.layers["fea"].Delete()
+                    else:
+                        doc.layers["ss-" + str(s)].Delete()
+                     # time.sleep(1)
 
 if __name__ == "__main__":
     main()
