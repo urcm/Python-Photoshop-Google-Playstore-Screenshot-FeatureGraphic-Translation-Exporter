@@ -172,6 +172,12 @@ def main():
                     else:
                         doc.layers["ss-" + str(s)].Delete()
                      # time.sleep(1)
+                    
+            # time.sleep(1)
+            # Export screenshot file
+            doc.Export(ExportIn=fname, ExportAs=2, Options=options)
+            
+            
 
 if __name__ == "__main__":
     main()
