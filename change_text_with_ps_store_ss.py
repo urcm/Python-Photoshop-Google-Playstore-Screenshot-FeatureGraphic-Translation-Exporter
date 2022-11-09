@@ -176,7 +176,9 @@ def main():
             # time.sleep(1)
             # Export screenshot file
             doc.Export(ExportIn=fname, ExportAs=2, Options=options)
-            
+            # time.sleep(3)
+            print("Exporting has finished for '{}'".format(fname))
+            print("-----------------------------------------------\n\n")
             
 
 if __name__ == "__main__":
