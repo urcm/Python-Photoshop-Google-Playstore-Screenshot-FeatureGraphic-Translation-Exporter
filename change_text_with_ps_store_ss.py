@@ -179,7 +179,8 @@ def main():
             # time.sleep(3)
             print("Exporting has finished for '{}'".format(fname))
             print("-----------------------------------------------\n\n")
-            
+            doc.ActiveHistoryState = saved_history_state
+            file_del_counter += 1           
 
 if __name__ == "__main__":
     main()
