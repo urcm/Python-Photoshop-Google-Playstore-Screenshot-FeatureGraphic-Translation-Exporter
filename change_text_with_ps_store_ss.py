@@ -180,7 +180,12 @@ def main():
             print("Exporting has finished for '{}'".format(fname))
             print("-----------------------------------------------\n\n")
             doc.ActiveHistoryState = saved_history_state
-            file_del_counter += 1           
+            file_del_counter += 1         
+            
+            
+    print("\n\nAll translated screenshot exported successfully. \n\n")
+    print("ALl Done!")
+    print("Have a nice day!")
 
 if __name__ == "__main__":
     main()
