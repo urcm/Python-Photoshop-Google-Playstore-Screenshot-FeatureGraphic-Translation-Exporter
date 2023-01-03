@@ -40,9 +40,9 @@ def main():
         ps_app = win32com.client.Dispatch("Photoshop.Application")
     except Exception as e:
         print("\nDispatching Photoshop is not working...\n", repr(e))
-        print("\nDo you have installed Photoshop?\n")
+        print("\nDid you install Photoshop?\n")
 
-    # path = "D:\calismalar\lina\OK2\test\translate.txt"
+    # path = "C:\folder\translate.txt"
     path = sys.argv[2]
     
     
